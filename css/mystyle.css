@@ -4,6 +4,10 @@ body {
 	background-color: #fff;
 }
 
+nav {
+	height: 52px;
+}
+
 /* -- main page -- */
 
 .main {
