@@ -1,14 +1,14 @@
 /* -- all pages -- */
 
 body {
-	background-color: #fff;
+	background-color: #3EB489;
 }
 
 /* -- main page -- */
 
 .main {
-	background-color: white;
 	min-height: 500px;
+	color: white;
 }
 
 #title {
@@ -28,7 +28,17 @@ footer {
 
 /* -- contact page -- */
 
-iframe .forum {
+iframe {
     overflow-y: hidden;
     background-color: #fff;
+}
+
+/* -- resume page -- */
+
+button {
+    color: black;
+}
+
+button a:hover {
+	color: lightgray;
 }
