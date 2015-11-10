@@ -1,14 +1,13 @@
-/* -- all pages -- */
+/* -- all pages #3EB489 -- */
 
 body {
-	background-color: #3EB489;
+	background-color: #fff;
 }
 
 /* -- main page -- */
 
 .main {
 	min-height: 500px;
-	color: white;
 }
 
 #title {
@@ -16,6 +15,7 @@ body {
 }
 
 footer {
+	top-padding: 60px;
 	height: 56px;
 	background-color: gray;
 	color: white;
