@@ -1,5 +1,7 @@
 #Personal Website
 Sarah Baldwin<br>
+<br>
+Languages Utilized: HTML, CSS, CSS BOOTSTRAP 3, and Javascript<br>
 
 * Home<br>
 * About<br>
