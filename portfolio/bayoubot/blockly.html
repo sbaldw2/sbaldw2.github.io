@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BayouBot | Blockly</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/prefixfree.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.gif" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><h1>BayouBot <span class="subhead">Educational Robotics</span></h1></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Tutorials</a></li>
+          <li><a href="blockly.html">Code</a></li>
+          <li><a href="http://bayoubot.forumotion.com/">Forum</a></li>
+        </ul>
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+</header>
+
+
+<div class="main">
+  <div class="page" id="blockly">
+    <div class="content container">
+    <div id="blocklyDiv" style="height: 455px;"></div> <!-- blocklyDiv -->
+    <div id="row"><button type="button" class="btn btn-default" title="Export Blocks to Save" id="export" onclick="saveWorkspace()">Export Blocks</button><button type="button" class="btn btn-default" title="Import your Blocks when you Return" id="import" onclick="load()">Load Blocks</button></div> <!-- button row -->
+  </div><!-- page blockly -->
+  </div><!-- container -->
+</div><!-- main -->
+
+
+<footer>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>All contents &copy; 2015 <a href="http://www.lsu.edu/">Louisiana State University</a>. All rights reserved.</p>
+      </div><!-- col-sm-6 -->
+      <div class="col-sm-6">
+        <nav class="navbar navbar-default" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.facebook.com/BayouBot" target="new" id="facebook"><img src="images/fbook-icon.png" width="35px" height="35px"></a></li>
+            <li><a href="https://twitter.com/BayouBot" target="new" id="twitter"><img src="images/twitter-icon.png" width="35px" height="35px"></a></li>
+            <li><a href="https://github.com/boubre/BayouBot" target="new" id="github"><img src="images/github-icon2.png" width="35px" height="35px"></a></li>
+          </ul>
+        </nav>
+      </div><!-- col-sm-6 -->
+    </div><!-- row -->
+  </div><!-- content container -->
+</footer>
+
+<!-- xml toolbox section -->
+<xml id="toolbox" style="display: none">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
+
+<!-- javascript sources & other section -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
+<script src="blockly/appengine/storage.js"></script>
+<script src="blockly/blockly_compressed.js"></script>
+<script src="blockly/blocks_compressed.js"></script>
+<script src="blockly/msg/js/en.js"></script>
+
+<script type="text/javascript">
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+
+//export blocks to local storage  
+function saveWorkspace() {
+    var xmlDom = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+    var xmlText = Blockly.Xml.domToPrettyText(xmlDom);
+    
+    localStorage.setItem("blockly.xml", xmlText);
+}
+//imports blocks from local storage
+function loadWorkspace() {
+    var xmlText = localStorage.getItem("blockly.xml");
+    if (xmlText) {
+        Blockly.mainWorkspace.clear();
+        xmlDom = Blockly.Xml.textToDom(xmlText);
+        Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, xmlDom);
+    }
+}
+
+  var xml = Blockly.Xml.textToDom(xml_text);
+</script>
+
+</body>
+</html>

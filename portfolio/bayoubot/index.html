@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BayouBot | Educational Robotics</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/prefixfree.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.gif" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><h1>BayouBot <span class="subhead">Educational Robotics</span></h1></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#featured">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="blockly.html">Code</a></li>
+          <li><a href="http://bayoubot.forumotion.com/">Forum</a></li>
+        </ul>        
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+
+  <div class="carousel fade" data-ride="carousel" id="featured">
+
+    <div class="carousel-inner fullheight">
+      <div class="item active"><img src="images/banner.png" alt="BayouBot"></div>
+    </div><!-- carousel-inner -->
+  </div><!-- featured carousel -->
+</header>
+
+<div class="main">
+  <div class="page" id="about">
+    <div class="content container">
+      <h2>About BayouBot</h2>      
+      <div class="row">
+        <p class="col-md-5 col-md-offset-1">Introducing students to science, technology, engineering, and mathematics (STEM) disciplines at an early age has been the focus of several efforts in recent years—<i>NASA</i>, <i>Code.org</i>, <i>FIRST</i>. A popular approach has been to use educational robots, such as the Boe-Bot, and robotics competitions hosted by organizations—<i>FIRST</i> and <i>VEX</i>—as a catalyst for engaging students and teaching them about STEM disciplines. While using robotics as an educational tool seems to be effective, this approach can be cost prohibitive. To overcome this issue, we have developed an inexpensive educational robot with the goals of teaching programming methodology, basic electronics, and analytical thought. This robot can be mass produced for about $20, has freely available source code and hardware files, is controlled remotely by a computer (such as the Raspberry Pi) with little computation being done by the robot, and has an emphasis on being easy to use and program.</p>
+        <p class="col-md-5">Accompanying the robot, there is a programming workspace, we developed, with <i>MIT’s</i> OpenBlocks library, which is similar to Scratch. Unlike other inexpensive robots, the BayouBot has multiple digital I/O ports for custom electronics that allows it to be adapted to accomplish various tasks and is capable of wireless Bluetooth communications. This wireless capability  allows students to program the robot in our workspace and then wirelessly transmit instructions to the robot for execution, which makes programming more seamless and less tedious for students. By combining this robot with a website similar to Code.org and other educational materials, we hope to make robotics education more accessible.  The hardware designs and source code can be found here at <a class="git" href="https://github.com/boubre/BayouBot">github.com/boubre/BayouBot</a></p>
+      </div><!-- row -->
+    </div><!-- content container -->
+  </div><!-- mission page -->
+
+  <div class="page" id="staff">
+    <div class="container-fluid">
+      <h2 id="ourstaff">BayouBot Team</h2>
+      <div class="row">
+
+        <div class="doctor col-lg-4">
+          <div class="row">
+            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+              <img class="img-circle" src="images/supratik-bw.jpg" alt="Photo of Dr. Mukhopadhyay">
+            </div><!-- photo -->
+            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+              <h3>Dr. Supratik Mukhopadhyay</h3>
+              <p>Dr. Supratik Mukhopadhyay is an Associate Professor in Computer Science at Louisiana State University. His research has been funded by NSF, NASA, ONR, DARPA, ARO, DOE, and state agencies and industry.  He is also a coach for a First Robotics team at Buchanan Elementary.</p>
+            </div><!-- info -->
+          </div> <!-- inner row -->
+        </div> <!-- doctor -->
+
+        <div class="doctor col-lg-4">
+          <div class="row">
+            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+              <img class="img-circle" src="images/brandon-bw.jpg"  alt="Photo of Brandon Oubre">
+            </div><!-- photo -->
+            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+              <h3>Brandon Oubre</h3>
+              <p>Brandon is a Goldwater scholar, a LaSTEM scholar, and graduated from LSU as a university medalist with college honors and a B.S. in both Computer Science and Mathematics. He developed the BayouBot for his honor's thesis, which was selected as an outstanding thesis. Brandon has also completed internships at NASA Ames Research Center and NASA Johnson Space Center.</p>
+            </div><!-- info -->
+          </div> <!-- inner row -->
+        </div> <!-- doctor -->
+
+        <div class="doctor col-lg-4">
+          <div class="row">
+            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
+              <img class="img-circle" src="images/sarah.jpg" alt="Photo of Sarah Baldwin">
+            </div><!-- photo -->
+            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
+              <h3>Sarah Baldwin</h3>
+             <p>Sarah is a Senior, majoring in Computer Science at Louisiana State University with minors in Mathematics and Information Technology Management. She's been designing, programming, and maintaining websites since early high school, and currently works as an Undergraduate Researcher at LSU's Center for Computation and Technology and as Webmaster of the BayouBot site.</p>
+            </div><!-- info -->
+          </div> <!-- inner row -->
+        </div> <!-- doctor -->
+
+
+      </div><!-- outer row -->
+    </div><!-- container -->
+  </div><!-- staff page -->
+
+  <div class="page" id="tutorials">
+    <div class="content container">
+      <h2>Tutorials</h2>
+      <div class="row">
+        <article class="service col-md-4 col-sm-6 col-xs-12">
+          <a href="http://www.w3schools.com/js/" target="new"><img class="icon" src="images/tutorial-icon.png" alt="Icon"></a>
+          <h3>JavaScript Tutorials</h3>
+          <p>Need the basics of JavaScript? Take a look at these w3schools JavaScript tutorials. <a href="http://www.w3schools.com/js/">Click Here</a> for more.</p>
+        </article>
+
+        <article class="service col-md-4 col-sm-6 col-xs-12">
+          <img class="icon" src="images/tutorial-icon-2.png" alt="Icon">
+          <h3>Coding with Blockly</h3>
+          <p>Want to get more familiar with the Blockly editor? <a href="blockly.html">Click here</a> to start coding with it today.</p>
+        </article>
+
+        <article class="service col-md-4 col-sm-6 col-xs-12">
+          <img class="icon" src="images/tutorial-icon.png" alt="Icon">
+          <h3>How to Assemble</h3>
+          <p>For a step by step on how to assemble the BayouBot device, <a href="instructions.html">click here</a> for more details and pictures.</p>
+        </article>  
+      </div><!-- row -->   
+    </div><!-- content container -->
+  </div><!-- services page -->
+
+
+  <div class="page" id="testimonials">
+    <div class="container-fluid">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <blockquote class="col-sm-6" id="janeh">
+          <div class="quote">
+            <span class="intro">Learn more about programming BayouBot with Blockly</span>
+            <span class="more"> Google's Blockly is a web-based, visual programming editor. Users can drag blocks together to build programs. All code is free and open source. Users drag blocks around, Blockly generates code, and the application does something with that code. From the application's point of view Blockly is just a textarea in which a user types syntactically perfect JavaScript, Python, PHP, Dart, or other language. <a href="blockly.html">Click here</a> to start programming with Blockly</span>
+            <span class="customer">Blockly</span>
+          </div>
+        </blockquote>
+
+        <blockquote class="col-sm-6" id="mcphersons">
+          <div class="quote">
+            <span class="intro">How to assemble the BayouBot device</span>
+            <span class="more">If you are looking for more information on how to assemble the BayouBot device, then <a href="instructions.html">click here</a> for a step-by-step with pictures.</span>
+            <span class="customer">The McPhersons</span>
+          </div>
+        </blockquote>
+
+        <blockquote class="col-sm-6" id="johnb">
+          <div class="quote">
+            <span class="intro">Have questions or want to discuss code? Try out the BayouBot Forum</span>
+            <span class="more">It's a friendly place to ask questions, respond to others, give/get feedback, meet other fellow coders, and more! Click on this link, <a href="http://bayoubot.forumotion.com/">BayouBot Forum</a>, to start conversing with other BayouBot programmers today!</span>
+            <span class="customer">Forum</span>
+          </div>
+        </blockquote>
+
+        <blockquote class="col-sm-6" id="lorraines">
+          <div class="quote">
+            <span class="intro">Learn more about Javascript from the w3schools</span>
+            <span class="more">These tutorials from the w3schools will teach you JavaScript from basic to advanced. Program like a BayouBot Master! <a href="http://www.w3schools.com/js/">Click here</a> for more.</span>
+            <span class="customer">Lorraine S</span>
+          </div>
+        </blockquote>          
+      </div>
+    </div><!-- container -->
+  </div><!-- testimonials page -->
+</div><!-- main -->
+
+<footer>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>All contents &copy; 2015 <a href="http://www.lsu.edu/">Louisiana State University</a>. All rights reserved.</p>    
+      </div><!-- col-sm-6 -->
+      <div class="col-sm-6">
+        <nav class="navbar navbar-default" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.facebook.com/BayouBot" target="new" id="facebook"><img src="images/fbook-icon.png" width="35px" height="35px"></a></li>
+            <li><a href="https://twitter.com/BayouBot" target="new" id="twitter"><img src="images/twitter-icon.png" width="35px" height="35px"></a></li>
+            <li><a href="https://github.com/boubre/BayouBot" target="new" id="github"><img src="images/github-icon2.png" width="35px" height="35px"></a></li>
+          </ul>
+        </nav>
+      </div><!-- col-sm-6 -->
+    </div><!-- row -->
+  </div><!-- content container -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
+</body>
+</html>
